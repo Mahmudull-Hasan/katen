@@ -1,0 +1,152 @@
+/*!
+Theme Name: Katen
+Theme URI: http://underscores.me/
+Author: Hasan Mahmud
+Author URI: https://www.hmhasan.com
+Description: Katen Minimal and Magazine Blog WordPress Theme
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: katen
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Katen is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/* 
+popup menu css
+*/
+.vertical-menu ul {
+    padding: 0;
+    margin: 0 auto;
+} 
+
+
+.navbar-nav ul li i {
+    display: none;
+}
+
+.vertical-menu ul li {
+    border-bottom: 1px solid #EBEBEB;
+    padding: 8px 0px !important;
+}
+.sub-menu li a {
+    padding: 0;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+}
+
+.widget-about .about-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.post-carousel .inner img {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+/* Pagination*/
+.prev-arrow,
+.next-arrow {
+    position: relative;
+    display: block;
+    color: #8F9BAD;
+    border-radius: 50%;
+    font-size: 14px;
+    text-decoration: none;
+    border: solid 1px #EBEBEB;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0;
+    width: 45px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.prev-arrow a i {
+    color: #8F9BAD;
+}
+.next-arrow a i {
+    color: #8F9BAD;
+}
+
+.prev-arrow:hover a i {
+    color: #FFF;
+}
+.next-arrow:hover a i {
+    color: #FFF;
+}
+.prev-arrow:hover {
+    z-index: 2;
+    cursor: pointer;
+    color: #FFF;
+    background: #FFA387;
+    background: -webkit-linear-gradient(bottom, #FFA387 0%, #FE4F70 51%, #FFA387 100%);
+    background: linear-gradient(to top, #FFA387 0%, #FE4F70 51%, #FFA387 100%);
+    background-size: auto 200%;
+    border-color: transparent;
+}
+.next-arrow:hover {
+    z-index: 2;
+    cursor: pointer;
+    color: #FFF;
+    background: #FFA387;
+    background: -webkit-linear-gradient(bottom, #FFA387 0%, #FE4F70 51%, #FFA387 100%);
+    background: linear-gradient(to top, #FFA387 0%, #FE4F70 51%, #FFA387 100%);
+    background-size: auto 200%;
+    border-color: transparent;
+}
+
+.prev-arrow::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f359";
+    font-size: 25px;
+    position: absolute;
+    left: 8px;
+}
+.next-arrow::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f35a";
+    font-size: 25px;
+    position: absolute;
+    left: 8px;
+}
+
+/*================
+// Logo CSS
+=================*/
+.navbar-brand img {
+    width: 25%;
+    height: auto;
+}
+
+.logo img {
+    width: 40%;
+    height: auto;
+}
+
+
+/*==============
+//About page css
+===============*/
+
+.page-content img {
+    height: 350px;
+    width: 600px;
+    object-fit: cover;
+}
